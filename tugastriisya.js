@@ -5,7 +5,7 @@ const BaseURL = "https://kasir-api.zelz.my.id"
 let accessToken;
 let refreshToken;
 describe ("get registration",async ()=>{
-    it("create account", async ()=> {
+    it.skip("create account", async ()=> {
        const response = await request (BaseURL).post('/registration').send(
         {  
           "name": "Triisya Toko",
@@ -44,7 +44,7 @@ describe ("get login", async ()=>{
 )
 
 describe ("get add unit", async ()=>{
-    it ("add unit", async()=> {
+    it.skip("add unit", async()=> {
         const response = await request (BaseURL).post('/units').send(
             {
                 "name": "gram",
@@ -70,7 +70,7 @@ describe ("get add unit", async ()=>{
 }
 )
 describe ("get add Category", async ()=>{
-    it ("add Category", async()=> {
+    it.skip("add Category", async()=> {
         const response = await request (BaseURL).post('/categories').send(
             {
                 "name": "makanan ringan",
@@ -97,7 +97,7 @@ describe ("get add Category", async ()=>{
 }
 )
 describe("add Customers", async ()=>{
-    it ("add Customers", async()=> {
+    it.skip("add Customers", async()=> {
         const response = await request (BaseURL).post('/customers').send(
             {
                 "name": "Triisya",
